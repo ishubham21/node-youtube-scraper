@@ -1,0 +1,22 @@
+{
+  "name": "youtube-scrapper",
+  "version": "1.0.0",
+  "description": "An extension and a web-app to extract audio from youtube",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ishubham21/scrapper.git"
+  },
+  "keywords": [
+    "youtube"
+  ],
+  "author": "Shubham Gautam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ishubham21/scrapper/issues"
+  },
+  "homepage": "https://github.com/ishubham21/scrapper#readme"
+}
