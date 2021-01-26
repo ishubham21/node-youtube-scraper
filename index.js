@@ -1,7 +1,12 @@
 const fs = require('fs')
 const youtubedl = require('youtube-dl')
 
-const video = youtubedl('http://www.youtube.com/watch?v=90AiXO1pAiA')
+var form = document.querySelector('form')
+var video
+form.addEventListener('submit', () =>{
+    var link = document.querySelector('input').value
+    video = youtubedl(link)
+})
 
 // Will be called when the download starts.
 video.on('info', function (info) {
