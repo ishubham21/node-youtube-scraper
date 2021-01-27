@@ -1,10 +1,11 @@
 const fs = require('fs')
 const youtubedl = require('youtube-dl')
 
+//if link isn't provided download the default video
 var link = process.argv[2] || 'https://www.youtube.com/watch?v=AZCzfLMHUQs'
 
 //give custom name or the video'll be labelled as 'youtube_video.mp4'
-var title = process.argv[3] || 'youtube_video'
+var fileName = process.argv[3] || 'youtube_video'
 
 const video = youtubedl(`${link}`,
     ['--format=18'],
@@ -14,12 +15,13 @@ const video = youtubedl(`${link}`,
 
 // Will be called when the download starts.
 video.on('info', info => {
-    downloadVideo(title)
+    downloadVideo(fileName)
+    console.log(`Title: ${info.title}`);
     console.log('Download started')
-    console.log('size: ' + `${info.size/1000} KB`)
+    console.log('size: ' + `${info.size/(1000 * 1000)} MB`)
 })
 
-async function downloadVideo(title) {
-    await video.pipe(fs.createWriteStream(`${title}.mp4`))
+async function downloadVideo(fileName) {
+    await video.pipe(fs.createWriteStream(`${fileName}.mp4`))
     console.log('Download completed');
 }
