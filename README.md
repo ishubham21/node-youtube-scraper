@@ -18,9 +18,9 @@ With this application, the users get an upper hand in choosing the file name of 
 
 * Clone this repo
   
-  ```
-  git clone --depth 1 https://github.com/ishubham21/youtube-scrapper.git
-  ```
+ ```
+ git clone --depth 1 https://github.com/ishubham21/youtube-scrapper.git
+ ```
 
 * Make sure you've node installed in your system.
  
@@ -41,6 +41,7 @@ npm install
 
 ```
 node video.js <youtube link to the video> <filename>
+```
 
 In the above command youtube link and filename are both optional and can be left out without invoking any error.
 
