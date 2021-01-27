@@ -1,6 +1,6 @@
 # Disclaimer 
 
-This project is only for learing purposes and that only videos which you've uploaded on your YT channel can be downloaded ethically. Voilating this maybe against Youtube guidelines.
+This project is only for learning purposes and that only videos which you've uploaded on your YT channel can be downloaded ethically. Violating this maybe against Youtube guidelines.
 
 # About this project 
 
@@ -8,7 +8,7 @@ Ever found a video on Youtube so binding that you've wanted to download that but
 
 Well, then this application can be for you.
 
-This is a node application which is built using **ytdl-core** to help user download the Youtube elements including Video, Audio and Subtitles directly using node CLI into their devices. 
+This is a node application which is built using **ytdl-core** to help the user download the Youtube elements including Video, Audio and Subtitles directly using node CLI into their devices. 
 
 This application contains three files to facilitate the download of audio, video and/or subtitles respectively from Youtube.
 
@@ -29,7 +29,7 @@ With this application, the users get an upper hand in choosing the file name of 
  node --version
  ```
 
-* Go the root folder of this project i.e. where the *package.json* is present and run the following command in the terminal to install thhe required modules
+* Go the root folder of this project i.e. where the *package.json* is present and run the following command in the terminal to install the required modules
 
 ```
 npm install
@@ -43,16 +43,16 @@ npm install
 node video.js <youtube link to the video> <filename>
 ```
 
-In the above command youtube link and filename are both optional and can be left out without invoking any error.
+In the above command, youtube link and filename are both optional and can be left out without invoking any error.
 
 
-* To download an audio from youtube, type in your terminal
+* To download audio from youtube, type in your terminal
 
 ```
 node audio.js <youtube link to the video> <filename>
 ```
 
-In the above command youtube link and filename are both optional and can be left out without invoking any error.
+In the above command, youtube link and filename are both optional and can be left out without invoking any error.
 
 * To download the subtitles from youtube, type in your terminal 
 
